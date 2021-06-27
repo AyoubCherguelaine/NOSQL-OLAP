@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OLAPFinal.ProductsFile.Products">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgIAEAIAAAAAAAAAAAAIAAAAAACIECAA=</HashCode>
+      <FileName>ProductsFile\Products.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Suppliers" />
+      <Property Name="Category" />
+      <Property Name="Price_Level" />
+      <Property Name="Stock_Level" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OLAPFinal.Suppliers">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAggAIAIAAAAAAAAAAAAAAAMBAAAAEAAA=</HashCode>
+      <FileName>Suppliers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OLAPFinal.Category">
+    <Position X="4.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAgAAAAIAAAAAAACAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OLAPFinal.Price_Level">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgIAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>PriceLevel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OLAPFinal.Stock_Level">
+    <Position X="9.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAABAIAAAAAAAAAAAQAAAAAAAAAEAAA=</HashCode>
+      <FileName>StockLevel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

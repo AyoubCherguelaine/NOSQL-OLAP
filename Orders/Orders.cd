@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OLAPFinal.Orders.Customer">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAggAIgAAAIAQAAAIAAAAAAEAACAAEAAA=</HashCode>
+      <FileName>Orders\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OLAPFinal.Orders.DataOrders">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAACggAAAAAAAAgAEAAAAAAAAAAAAAAAAAABAAAEA=</HashCode>
+      <FileName>Orders\DataOrders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OLAPFinal.Orders.GetData">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAEAAAAAAAAAAAAAAAAAQAAIACAAQAQAAAAAAQA=</HashCode>
+      <FileName>Orders\GetData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OLAPFinal.Orders.Orders">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAEABAAAAgAAAAIAIAAAwAAAAAAAAAAAAAACEAAA=</HashCode>
+      <FileName>Orders\Orders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OLAPFinal.Orders.Time">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAARAAAgAAAgAAAAAMAgAAAAAANAIAIAAAEAAA=</HashCode>
+      <FileName>Orders\Time.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OLAPFinal.Orders.Employee">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAggAIgAEAAAABAAIAAAAIAEAAAAAEAAA=</HashCode>
+      <FileName>Orders\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
