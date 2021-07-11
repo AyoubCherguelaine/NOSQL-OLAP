@@ -17,7 +17,7 @@ namespace OLAPFinal.Database
         public DataBase()
         {
            
-            string path = AppDomain.CurrentDomain.BaseDirectory + @"olapnosql-firebase-adminsdk-z135x-55b7d93a98.json";
+            string path = AppDomain.CurrentDomain.BaseDirectory + @"ConsoleFileJson.json";
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
             Db = FirestoreDb.Create("olapnosql");
             Console.WriteLine("\n\n\n\n\n connect with firestore\n\n\n\n");
