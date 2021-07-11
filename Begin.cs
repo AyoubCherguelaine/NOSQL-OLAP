@@ -12,7 +12,7 @@ namespace OLAPFinal
         public static void initBegin() {
 
             StaticDataBase.DB = new DataBase();
-            Orders.GetData.init();
+           Orders.GetData.init();
             //Orders.GetData.GetdataDB();
             RevenueFile.DownloadData.init();
             Thread thread = new Thread(delegate () { RevenueFile.DownloadData.DownloadDataRevenue(); });

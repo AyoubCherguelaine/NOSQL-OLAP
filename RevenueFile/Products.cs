@@ -42,28 +42,27 @@ namespace OLAPFinal.RevenueFile
             Console.WriteLine("categoryID :" + CategoryID);
         }
 
-        public async void GetProduct(string IDRevenue)
+        public async void GetProduct(string IDRevenue,string id)
         {
-            Query q = Database.StaticDataBase.DB.Db.Collection("Revenue").Document(IDRevenue).Collection("Product");
+            DocumentReference reference = Database.StaticDataBase.DB.Db.Collection("Revenue").Document(IDRevenue).Collection("Product").Document(id);
+           // Query q = Database.StaticDataBase.DB.Db.Collection("Revenue").Document(IDRevenue).Collection("Product");
+
+            var t = reference.GetSnapshotAsync();
            
-            var t = q.GetSnapshotAsync();
+          //  var t = q.GetSnapshotAsync();
             t.Wait();
-            QuerySnapshot document = t.Result;
-            if (document.Count > 0)
-            {
-                if (document[0].Exists)
+            // QuerySnapshot document = t.Result;
+            DocumentSnapshot document = t.Result;
+           
+                if (document.Exists)
                 {
-                    this.ID = document[0].Id;
-                    this.ProductName = document[0].GetValue<string>("ProductName");
-                    this.CategoryName = document[0].GetValue<string>("CategoryName");
-                    this.CategoryID = document[0].GetValue<int>("CategoryID");
+                    this.ID = document.Id;
+                    this.ProductName = document.GetValue<string>("ProductName");
+                    this.CategoryName = document.GetValue<string>("CategoryName");
+                    this.CategoryID = document.GetValue<int>("CategoryID");
                 }
 
-            }
-            else
-            {
-                Console.WriteLine("Error in get Time in the Revenue Doc :" + IDRevenue);
-            }
+           
 
 
         }

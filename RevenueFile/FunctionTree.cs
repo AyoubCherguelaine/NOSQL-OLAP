@@ -451,8 +451,14 @@ namespace OLAPFinal.RevenueFile
                     {
                         ArrayList list = new ArrayList();
                         list.Add(R);
-                        DownloadData.Cube[keyFirst][keyscnd].Add(R.customer.Country, list);
-                        
+                        try
+                        {
+                            DownloadData.Cube[keyFirst][keyscnd].Add(R.customer.Country, list);
+                        }
+                        catch (Exception eee)
+                        {
+
+                        }
                     }
                 }
             }

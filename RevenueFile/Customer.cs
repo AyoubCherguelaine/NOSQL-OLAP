@@ -33,24 +33,22 @@ namespace OLAPFinal.RevenueFile
             return this.Name == o.Name && Country == o.Country && this.City == o.City;
         }
 
-        public async void GetCutomer(string IDRevenue)
+        public async void GetCutomer(string IDRevenue,string id)
         {
-            Query q = Database.StaticDataBase.DB.Db.Collection("Revenue").Document(IDRevenue).Collection("Customer");
-            
-            var t = q.GetSnapshotAsync();
+           // Query q = Database.StaticDataBase.DB.Db.Collection("Revenue").Document(IDRevenue).Collection("Customer");
+            DocumentReference reference = Database.StaticDataBase.DB.Db.Collection("Revenue").Document(IDRevenue).Collection("Customer").Document(id);
+
+            // var t = q.GetSnapshotAsync();
+            var t = reference.GetSnapshotAsync();
             t.Wait();
-            QuerySnapshot document = t.Result;
+            //QuerySnapshot document = t.Result;
+            DocumentSnapshot document = t.Result;
 
            //Console.WriteLine("id customer L:" + document[0].Id);
-                    this.ID = document[0].Id;
-                    this.Name = document[0].GetValue<string>("Name");
-                    this.City = document[0].GetValue<string>("City");
-                    this.Country = document[0].GetValue<string>("Country");
-              
-
-          
-
-
+                    this.ID = document.Id;
+                    this.Name = document.GetValue<string>("Name");
+                    this.City = document.GetValue<string>("City");
+                    this.Country = document.GetValue<string>("Country");
         }
     }
 }

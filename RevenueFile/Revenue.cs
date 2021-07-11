@@ -33,6 +33,38 @@ namespace OLAPFinal.RevenueFile
 
         }
 
+        private string IDCustomer, IDProduct, IDTime;
+
+        public void dechefri()
+        {
+            string id = this.ID;
+
+            List<string> list = new List<string>();
+            list.Add("");
+            list.Add("");
+            list.Add("");
+            list.Add("");
+            int i = 0;
+            foreach(char x in id)
+            {
+                if(x != '-')
+                {
+                    list[i] += x;
+
+                }
+                else
+                {
+                    i++;
+                }
+            }
+            IDProduct = list[0];
+            IDCustomer = list[1];
+            IDTime = list[2] +"-" +list[3];
+
+            Console.WriteLine("id programe :" +IDProduct+"\n id customer :" +IDCustomer +"id time :" +IDTime );
+
+        }
+
         public  void GetRevenue(DocumentSnapshot doc)
         {
            
@@ -40,16 +72,15 @@ namespace OLAPFinal.RevenueFile
                 if (doc.Exists)
                 {
                     this.ID = doc.Id;
+
+                this.dechefri();
                     this.OrderRevenue = doc.GetValue<double>("OrderRevenue");
                     this.ShippedRevenue = doc.GetValue<double>("ShippedRevenue");
                
-                    products.GetProduct(ID);
-                    customer.GetCutomer(ID);
-                    time.GetTime(ID);
-                
-               
-
-                }
+                    products.GetProduct(ID,IDProduct);
+                    customer.GetCutomer(ID,IDCustomer);
+                    time.GetTime(ID,IDTime);
+                 }
 
 
 

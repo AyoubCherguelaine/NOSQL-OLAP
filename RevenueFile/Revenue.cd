@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OLAPFinal.RevenueFile.Customer">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAggAIgAAAIAQAAAIAAAAAAEAACAAEEAA=</HashCode>
+      <FileName>RevenueFile\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OLAPFinal.RevenueFile.DownloadData">
+    <Position X="8.75" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAgAAAAAAACAikAAABQAAAAAAIAAAAQAAAAAAA=</HashCode>
+      <FileName>RevenueFile\DownloadData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OLAPFinal.RevenueFile.Products">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAACAAAAgAAAAAAAAAAAACAAAAIIAgAACAAMAAA=</HashCode>
+      <FileName>RevenueFile\Products.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OLAPFinal.RevenueFile.FunctionTree">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAACEAEACAAAAACAAEIABAAAAAAAA=</HashCode>
+      <FileName>RevenueFile\FunctionTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OLAPFinal.RevenueFile.Revenue">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABABAAABAEIEgACAAQAAAAAAAAACAAAIAAIABAAEAAA=</HashCode>
+      <FileName>RevenueFile\Revenue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OLAPFinal.RevenueFile.Time">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAARAAAgAAAgAAAAAMAgAAAAAAMAIAIAAAEAAA=</HashCode>
+      <FileName>RevenueFile\Time.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

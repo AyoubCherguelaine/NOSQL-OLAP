@@ -45,28 +45,31 @@ namespace OLAPFinal.RevenueFile
             return Month == T.Month && Year == T.Year;
         }
 
-        public async void GetTime(string IDRevenue)
+        public async void GetTime(string IDRevenue,string id)
         {
-            Query q = Database.StaticDataBase.DB.Db.Collection("Revenue").Document(IDRevenue).Collection("Time");
-          
+           // Query q = Database.StaticDataBase.DB.Db.Collection("Revenue").Document(IDRevenue).Collection("Time");
+            DocumentReference reference = Database.StaticDataBase.DB.Db.Collection("Revenue").Document(IDRevenue).Collection("Time").Document(id);
 
-            var t = q.GetSnapshotAsync();
+
+            //var t = q.GetSnapshotAsync();
+            var t = reference.GetSnapshotAsync();
             t.Wait();
-            QuerySnapshot document = t.Result;
-            if (document.Count > 0)
-            {
-                if (document[0].Exists)
+            //  QuerySnapshot document = t.Result;
+            DocumentSnapshot document = t.Result;
+          //  if (document.Count > 0)
+           // {
+                if (document.Exists)
                 {
-                    this.ID = document[0].Id;
-                    this.Month = document[0].GetValue<int>("Month");
-                    this.Year = document[0].GetValue<int>("Year");
+                    this.ID = document.Id;
+                    this.Month = document.GetValue<int>("Month");
+                    this.Year = document.GetValue<int>("Year");
                 }
 
-            }
-            else
-            {
-                Console.WriteLine("Error in get Time in the Revenue Doc :" + IDRevenue);
-            }
+          //  }
+          //  else
+           // {
+          //      Console.WriteLine("Error in get Time in the Revenue Doc :" + IDRevenue);
+          //  }
 
 
         }

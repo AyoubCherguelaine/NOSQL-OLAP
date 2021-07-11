@@ -84,7 +84,8 @@ namespace OLAPFinal.RevenueFile
                 Console.WriteLine($"Revenue Test : \nrevenueID: {revenue.ID}\n   OrderRevenue:{revenue.OrderRevenue}\n   CutomerName :{revenue.customer.Name} \n   ProductName : {revenue.products.ProductName }");
 
                 i++;
-                 if (doc.Id == "19-HANAR-1996-5" )
+                Console.WriteLine("\n\n\n\n\n\n " + i + "\n\n\n\n\n\n\n\n\n\n\n");
+                 if (i == 141)
                  { 
                     break;
                 }

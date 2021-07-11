@@ -11,16 +11,16 @@
     </TypeIdentifier>
   </Class>
   <Class Name="OLAPFinal.Orders.DataOrders">
-    <Position X="0.5" Y="4.5" Width="1.5" />
+    <Position X="8.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACAAACggAAAAAAAAgAEAAAAAAAAAAAAAAAAAABAAAEA=</HashCode>
+      <HashCode>ACAAACggAEAAAAAAgAEAAAAABAAAAAAAAAAAABAAAEA=</HashCode>
       <FileName>Orders\DataOrders.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OLAPFinal.Orders.GetData">
     <Position X="10.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAAEAAAAAAAAAAAAAAAAAQAAIACAAQAQAAAAAAQA=</HashCode>
+      <HashCode>AQAAAAEAAAAAAASAAAAAAAAAQBAIACIAQAQIAAAAAQA=</HashCode>
       <FileName>Orders\GetData.cs</FileName>
     </TypeIdentifier>
   </Class>
